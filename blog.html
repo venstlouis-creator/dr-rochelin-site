@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Dr. Rochelin Aesthetic &amp; Wellness</title>
+  <meta name="description" content="Plain-English articles on Botox, weight management, hormones, body contouring, and wellness from Dr. Rochelin Aesthetic & Wellness in North Miami Beach, FL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="section nav-inner">
+      <a href="index.html" class="nav-logo">Dr. Rochelin <span>Aesthetic</span></a>
+      <div class="navlinks">
+        <a href="index.html">Services</a>
+        <a href="index.html">Treatments</a>
+        <a href="index.html">Medicare</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="index.html">Contact</a>
+        <a href="tel:+13059745548" class="nav-phone">(305) 974-5548</a>
+        <a href="index.html" class="btn-primary">Book free consultation</a>
+      </div>
+      <div class="menubtn" aria-label="Open menu"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="blog-hero">
+      <div class="section">
+        <div class="blog-hero-label">From our clinic</div>
+        <h1>The <em>Blog</em></h1>
+        <p>Straight answers to the questions we hear most — what a treatment actually does, what the research really shows, and what to expect. Written to be easy to read, and checked against sources we trust.</p>
+      </div>
+    </section>
+
+    <div class="filter-bar">
+      <div class="section">
+        <div class="filter-bar-inner">
+          <button class="filter-btn active" onclick="filterCards('all', this)">All Topics</button>
+          <button class="filter-btn" onclick="filterCards('face', this)">Face &amp; Skin</button>
+          <button class="filter-btn" onclick="filterCards('body', this)">Body Contouring</button>
+          <button class="filter-btn" onclick="filterCards('weight', this)">Weight</button>
+          <button class="filter-btn" onclick="filterCards('wellness', this)">Wellness &amp; Hormones</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="blog-grid-section">
+      <div class="section">
+        <div class="blog-grid" id="blogGrid">
+
+          <a href="blog-botox.html" class="card card-featured" data-cat="face">
+            <div class="card-thumb"><div class="card-thumb-inner"><span class="card-thumb-icon">💉</span></div><span class="card-thumb-label">Face &amp; Skin</span></div>
+            <div class="card-body">
+              <div class="card-meta">June 2026 · 6 min read</div>
+              <h2>Botox, Explained Without the Hype</h2>
+              <p>Botox has been around far longer than most people think — and it started in eye clinics, not beauty ones. Here's what it actually does, what it's officially cleared for, and why looking natural really comes down to who's holding the needle.</p>
+              <span class="card-link">Read article →</span>
+            </div>
+          </a>
+
+          <a href="blog-semaglutide.html" class="card" data-cat="weight">
+            <div class="card-thumb"><div class="card-thumb-inner"><span class="card-thumb-icon">⚖️</span></div><span class="card-thumb-label">Weight</span></div>
+            <div class="card-body">
+              <div class="card-meta">June 2026 · 5 min read</div>
+              <h2>Semaglutide: What the Big Studies Actually Found</h2>
+              <p>The weekly shot behind all the headlines. We look at how it works, how much weight people really lost in the trials, and who it's actually meant for.</p>
+              <span class="card-link">Read article →</span>
+            </div>
+          </a>
+
+          <a href="blog-hrt.html" class="card" data-cat="wellness">
+            <div class="card-thumb"><div class="card-thumb-inner"><span class="card-thumb-icon">🌿</span></div><span class="card-thumb-label">Wellness &amp; Hormones</span></div>
+            <div class="card-body">
+              <div class="card-meta">June 2026 · 6 min read</div>
+              <h2>Hormone Therapy for Menopause: A Balanced Look</h2>
+              <p>Hot flashes, broken sleep, mood that won't sit still — menopause is hard. Here's a clear, honest look at hormone therapy: who it helps, the real risks, and why the old scare stories were overblown.</p>
+              <span class="card-link">Read article →</span>
+            </div>
+          </a>
+
+          <a href="blog-cryolipolysis.html" class="card" data-cat="body">
+            <div class="card-thumb"><div class="card-thumb-inner"><span class="card-thumb-icon">❄️</span></div><span class="card-thumb-label">Body Contouring</span></div>
+            <div class="card-body">
+              <div class="card-meta">June 2026 · 5 min read</div>
+              <h2>CoolSculpting: Can Freezing Really Remove Fat?</h2>
+              <p>It sounds like a gimmick, but there's real science behind it. What controlled cooling does to fat, how much it actually removes, and the things it can't do.</p>
+              <span class="card-link">Read article →</span>
+            </div>
+          </a>
+
+          <a href="blog-prp.html" class="card" data-cat="face">
+            <div class="card-thumb"><div class="card-thumb-inner"><span class="card-thumb-icon">🩸</span></div><span class="card-thumb-label">Face &amp; Skin</span></div>
+            <div class="card-body">
+              <div class="card-meta">June 2026 · 5 min read</div>
+              <h2>PRP for Hair &amp; Skin: Promise vs. Hype</h2>
+              <p>The treatment that uses your own blood to boost hair and skin. We separate what's genuinely promising from the marketing — and we're honest about the limits.</p>
+              <span class="card-link">Read article →</span>
+            </div>
+          </a>
+
+          <a href="blog-hifem.html" class="card" data-cat="body">
+            <div class="card-thumb"><div class="card-thumb-inner"><span class="card-thumb-icon">⚡</span></div><span class="card-thumb-label">Body Contouring</span></div>
+            <div class="card-body">
+              <div class="card-meta">June 2026 · 5 min read</div>
+              <h2>Emsculpt &amp; Muscle-Building Machines: The Honest Version</h2>
+              <p>Thousands of crunches in 30 minutes, lying down — that's the pitch. Here's what these muscle-zapping machines really do, and what the research honestly shows.</p>
+              <span class="card-link">Read article →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div class="section cta-strip-inner">
+        <div>
+          <h2>Ready when<br><em>you are.</em></h2>
+          <p>Book a free consultation — an honest conversation about your goals,<br>and a plan that's right for you. No pressure.</p>
+        </div>
+        <div class="cta-btns">
+          <a href="index.html" class="btn-primary-lg">Book your free consultation</a>
+          <a href="tel:+13059745548" class="btn-outline">Call (305) 974-5548</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="section footer-grid">
+      <div>
+        <div class="footer-logo">Dr. Rochelin <span>Aesthetic &amp; Wellness</span></div>
+        <div class="footer-address">13571 Biscayne Blvd<br>North Miami Beach, FL 33181</div>
+        <div class="footer-lang">English · Español</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Contact</div>
+        <a href="tel:+13059745548">(305) 974-5548</a>
+        <p>Book your free consultation anytime.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Hours</div>
+        <div class="footer-hours">Mon–Fri · 9:00–6:00<br>Sat · by appointment<br>Sun · closed</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-label">Explore</div>
+        <div class="footer-col-links">
+          <a href="index.html">Services</a>
+          <a href="index.html">Medicare patients</a>
+          <a href="index.html">Contact</a>
+          <a href="blog.html">Blog</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobilebar">
+    <a href="index.html" class="mb-primary">Book free consult</a>
+    <a href="tel:+13059745548" class="mb-outline">Call us</a>
+  </div>
+
+  <script>
+    function filterCards(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('#blogGrid .card').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
