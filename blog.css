@@ -134,9 +134,18 @@ footer{background:var(--footer-bg);}
   body{padding-bottom:78px;}
   .blog-hero h1{font-size:48px !important;}
   .article-header h1{font-size:36px !important;}
+  .footer-legal-inner{flex-direction:column !important; gap:12px !important; align-items:flex-start !important;}
+  .footer-legal-links{flex-wrap:wrap; gap:10px 18px !important;}
 }
 @media (max-width:560px){
   .blog-grid{grid-template-columns:1fr !important;}
   .card-featured{grid-column:span 1;}
   .blog-hero h1{font-size:38px !important;}
 }
+/* legal footer */
+.footer-legal{border-top:1px solid rgba(199,169,139,0.22);}
+.footer-legal-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:22px;padding-bottom:30px;}
+.footer-legal-copy{font-size:12px;color:var(--footer-dim);letter-spacing:0.02em;}
+.footer-legal-links{display:flex;gap:24px;}
+.footer-legal-links a{font-size:12px;color:var(--footer-text);text-decoration:none;letter-spacing:0.02em;}
+.footer-legal-links a:hover{color:var(--footer-light);}
